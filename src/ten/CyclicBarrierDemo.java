@@ -5,11 +5,11 @@ import java.util.concurrent.*;
 public class CyclicBarrierDemo {
 
     public static void main(String[] args) {
-        CyclicBarrier cyclicBarrier = new CyclicBarrier(2,()->{
+        CyclicBarrier cyclicBarrier = new CyclicBarrier(3,()->{
             System.out.println("cyclicBarrier reset");
         });
 
-        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        ExecutorService executorService = Executors.newFixedThreadPool(3);
 
         executorService.submit(() -> {
             try {

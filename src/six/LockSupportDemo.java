@@ -12,7 +12,6 @@ public class LockSupportDemo {
 
         LockSupport.park();
 
-        LockSupport.parkNanos(Thread.currentThread(),1);
         System.out.println("park end");
     }
 }

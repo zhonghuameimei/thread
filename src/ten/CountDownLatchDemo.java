@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class CountDownLatchDemo {
 
     public static void main(String[] args) throws InterruptedException {
-        CountDownLatch countDownLatch = new CountDownLatch(2);
+        CountDownLatch countDownLatch = new CountDownLatch(3);
 
         ExecutorService executorService = Executors.newFixedThreadPool(2);
 
